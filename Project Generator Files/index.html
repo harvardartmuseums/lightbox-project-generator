@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lightbox</title>
+<style>
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	font-size: 33px;
+	background-color: #000000;
+	color: #000000;
+	font-family: Verdana, Geneva, sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	overflow: hidden;
+}
+img {
+	box-sizing: border-box;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+h1 {
+	font-size: 300%;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin: 0;
+}
+h2 {
+	font-size: 200%;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin: 0;
+}
+h3 {
+	font-size: 150%;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: normal;
+	margin: 0;
+}
+h4 {
+	font-size: 100%;
+	font-weight: bold;
+	display: inline;
+	margin: 0;
+}
+h5 {
+	font-size: 100%;
+	font-weight: normal;
+	margin: 0;
+	color: #999999;
+}
+.lightbackground {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+.darkbackground {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+.transparentbackground {
+	color: #FFFFFF;
+}
+div {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	border: 0px;
+}
+#container {
+	position: absolute;
+	transform-origin: 0% 0%;
+	background-color: #FFFFFF;
+	width: 5760px;
+	height: 3240px;
+}
+#slides {
+	height: 100%;
+}
+.remoteinstructions {
+	position: absolute;
+	width: auto;
+	height: auto;
+	left: 0px;
+	bottom: 0px;
+	z-index: 5;
+	transform-origin: 0% 100%;
+	transform: scale(3, 3);
+}
+#progressbar {
+	position: absolute;
+	width: 0%;
+	height: 10px;
+	left: 0px;
+	bottom: 0px;
+	background-color: #999999;
+	opacity: .75;
+}
+#languagemenu {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	top: 1080px;
+	left: 1920px;
+	background-color: #000000;
+	color: #AAAAAA;
+	z-index: 5;
+	text-align: center;
+	display: table;
+	table-layout: fixed;
+	opacity: .9;
+}
+#languagemenu h2 {
+	display: inline;
+}
+#option0 {
+	color: #FFFFFF;
+}
+.slide {
+	float: left;
+	width: 5760px;
+	height: 3240px;
+	position: relative;
+	transform: translateX(0);
+}
+.contentbox {
+	float: left;
+	display: table;
+	table-layout: fixed;
+}
+.fullscreen {
+	width: 5760px;
+	height: 3240px;
+}
+.onescreen {
+	width: 1920px;
+	height: 1080px;
+}
+.halfscreen {
+	width: 960px;
+	height: 1080px;
+}
+.threescreenh {
+	width: 5760px;
+	height: 1080px;
+}
+.threescreenv {
+	width: 1920px;
+	height: 3240px;
+}
+.sixscreenh {
+	width: 5760px;
+	height: 2160px;
+}
+.sixscreenv {
+	width: 3840px;
+	height: 3240px;
+}
+.responsivesidebar {}
+.responsivecontent {}
+.popover {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	z-index: 3;
+}
+.popover img {
+	width: 50%;
+	height: auto;
+	max-height: 100%;
+	display: inline;
+}
+.toprow {
+	top: 0px;
+}
+.middlerow {
+	top: 1080px;
+}
+.bottomrow {
+	bottom: 0px;
+}
+.leftcolumn {
+	left: 0px;
+}
+.centercolumn {
+	left: 1920px;
+}
+.rightcolumn {
+	right: 0px;
+}
+.content {
+	box-sizing: border-box;
+	width: inherit;
+	height: inherit;
+	display: table-cell;
+}
+.padded {
+	padding: 100px;
+}
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.justify {
+	text-align: justify;
+}
+.top {
+	vertical-align: top;
+}
+.middle {
+	vertical-align: middle;
+}
+.bottom {
+	vertical-align: bottom;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<div id="slides">
+</div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/dataTypes.js"></script>
+<script src="js/data.js"></script>
+<script src="js/slideBuilder.js"></script>
+<script>
+setup();
+</script>
+</body>
+</html>

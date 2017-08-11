@@ -1,0 +1,21 @@
+{
+  "name": "lightbox-project-generator",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "draft-js": "^0.10.0",
+    "draft-js-export-html": "^0.5.2",
+    "draft-js-import-html": "^0.4.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
