@@ -1,3 +1,7 @@
+# :warning: ARCHIVED
+
+The Lightbox program ended on July 31, 2022. All associated projects have been retired and are no longer supported.
+
 # Lightbox Project Generator
 
 Using a react-based interface, this project generator allows you to easily create slideshow projects for the Lightbox screens. It highlights the nine-by-nine grid and offers features like translations and remote instructions.
